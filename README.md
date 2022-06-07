@@ -2,6 +2,19 @@ libsecp256k1 OpenCL
 ============
 Implement libsecp256k1 verify and recover with OpenCL.
 
+Build steps
+-----------
+
+liboclsp is built using autotools:
+
+    $ ./build.sh
+
+Test Case
+----------
+Test code is in oclsp:
+
+   $ ./runtest.sh
+
 About libsecp256k1
 ============
 [![Build Status](https://travis-ci.org/bitcoin-core/secp256k1.svg?branch=master)](https://travis-ci.org/bitcoin-core/secp256k1)
@@ -52,13 +65,3 @@ Implementation details
   * No data-dependent branches
   * The precomputed tables add and eventually subtract points for which no known scalar (private key) is known, preventing even an attacker with control over the private key used to control the data internally.
 
-Build steps
------------
-
-libsecp256k1 is built using autotools:
-
-    $ ./autogen.sh
-    $ ./configure
-    $ make
-    $ ./tests
-    $ sudo make install  # optional
