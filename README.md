@@ -1,6 +1,9 @@
-libsecp256k1
+libsecp256k1 OpenCL
 ============
+Implement libsecp256k1 verify and recover with OpenCL.
 
+About libsecp256k1
+============
 [![Build Status](https://travis-ci.org/bitcoin-core/secp256k1.svg?branch=master)](https://travis-ci.org/bitcoin-core/secp256k1)
 
 Optimized C library for EC operations on curve secp256k1.
